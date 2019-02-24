@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>app</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/landing-page.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body>
+
+
+<a name="about"></a>
+<div class="#">
+  <div class="container">
+  <div class="col-md-5 col-md-offset-3 col-xs-12 col-xs-offset-0"  >
+  <div class="bg">
+  <div > <img src="img/1.jpg" class="img-responsive org"></div>
+   <div class="tab_head"> <a href="index.html" ><i class="fa fa-arrow-left" aria-hidden="true"></i></a>&nbsp; &nbsp;All Services <img src="img/sr.jpg" class="img_1" ></div>
+    <div class="tab">
+   
+      <button class="tablinks " onclick="openCity(event, 'Servers')"  id="defaultOpen" >Beauty & spa</button>
+      <button class="tablinks" onclick="openCity(event, 'Fruits')">Appliance Repair</button>
+      <button class="tablinks" onclick="openCity(event, 'Workers')">Home Cleaning</button>
+    </div>
+    <div id="Servers" class="tabcontent">
+      <table>
+    
+        <tr>
+         
+          <td class="actived" ><a href="#"><img src="img/c1.png"></a></td>
+          <td>Salon at home for women</td>
+        </tr>
+         <tr>
+         
+          <td class="actived"><a href="#"><img src="img/c2.png"></a></td>
+          <td>Massage for women</td>
+        </tr>
+        
+         <tr>
+         
+          <td class="actived"><a href="#"><img src="img/c3.png"></a></td>
+          <td>Makeup and Hairstyling</td>
+        </tr>
+      
+        
+      </table>
+    </div>
+    <div id="Fruits" class="tabcontent">
+      <table>
+    
+        <tr>
+         
+          <td class="actived"><a href="#"><img src="img/b1.png"></a></td>
+          <td>Home deep cleaning</td>
+        </tr>
+         <tr>
+         
+          <td class="actived"><a href="#"><img src="img/b2.png"></a></td>
+          <td>Kitchen deep cleaning</td>
+        </tr>
+        
+         <tr>
+         
+          <td class="actived"><a href="#"><img src="img/b3.png"></a></td>
+          <td>Carpet  cleaning</td>
+        </tr>
+        
+         <tr>
+         
+          <td class="actived"><a href="#"><img src="img/b4.png"></a></td>
+          <td>Home deep cleaning</td>
+        </tr>
+        
+         <tr>
+         
+          <td class="actived"><a href="#"><img src="img/b5.png"></a></td>
+          <td>Bathroom deep cleaning</td>
+        </tr>
+        
+         <tr>
+         
+          <td class="actived"><a href="#"><img src="img/b6.png"></a></td>
+          <td>sofa deep cleaning</td>
+        </tr>
+        
+         <tr>
+         
+          <td class="actived"><a href="#"><img src="img/b7.png"></a></td>
+          <td>pest Control</td>
+        </tr>
+        
+      </table>
+    </div>
+    <!--<div id="Workers" class="tabcontent">
+      <table>
+        <tr>
+          <th>Officers</th>
+          <th>Department</th>
+          <th>Date of birth</th>
+          <th>Status</th>
+        </tr>
+        <tr>
+          <td>Leandro Bizzinotto Ferreira</td>
+          <td>Web Designer</td>
+          <td>23/09/1994</td>
+          <td class="intraining">In training</td>
+        </tr>
+        <tr>
+          <td>Cristiano Bizzinotto Ferreira</td>
+          <td>Advertising</td>
+          <td>23/09/1994</td>
+          <td class="available">Available</td>
+        </tr>
+        <tr>
+          <td>Amanda Maria Bizzinotto Ferreira</td>
+          <td>Polyglot, Translator, Developer</td>
+          <td>17/07/1993</td>
+          <td class="vacation">Vacation</td>
+        </tr>
+        <tr>
+          <td>Luis Antonio Ferreira</td>
+          <td>Personal Manager</td>
+          <td>20/08/1966</td>
+          <td class="available">Available</td>
+        </tr>
+        <tr>
+          <td>Luis Antonio Ferreira</td>
+          <td>Personal Manager</td>
+          <td>20/08/1968</td>
+          <td class="available">Available</td>
+        </tr>
+        <tr>
+          <td>Rita Helena Bizzinotto Ferreira</td>
+          <td>Housewife</td>
+          <td>20/07/1962</td>
+          <td class="disable">Disable</td>
+        </tr>
+      </table>
+    </div>-->
+    </div>
+    </div>
+    
+    
+    
+    
+  </div>
+  <!-- /.container --> 
+  
+</div>
+<!-- /.intro-header --> 
+
+<!-- Page Content --> 
+
+<a  name="services"></a> 
+
+<!-- /.content-section-a --> 
+
+<!-- /.content-section-b --> 
+
+<!-- Footer -->
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";}
+        
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");}
+
+document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";}
+	
+	
+	// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+<!-- jQuery --> 
+<script src="js/jquery.js"></script> 
+
+<!-- Bootstrap Core JavaScript --> 
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

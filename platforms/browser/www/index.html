@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/landing-page.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+
+    <title>Hello World</title>
+</head>
+
+<body>
+        
+        <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="#"><img src="img/1.jpg"></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#about">Become A Professional </a>
+                    </li>
+                    <li>
+                        <a href="#services">Login /sign up</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Header -->
+    <a name="about"></a>
+    <div class="intro-header">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h1>Your Services Expert </h1>
+                        <h3>Get instant access to reliable and afforable servicess</h3>
+                       <br>
+                      <ul class="list-inline intro-social-buttons">
+                           
+                            <li>
+                                                    
+                            <select class="form-control form-control-lg" name="category" id="validationCustom03" onchange="ChangecatList()" required>
+                                <option value=""></option>
+                                <option value="Classroom Instruction and Assessment">demo1</option>
+                                <option value="Curriculum Development and Alignment">demo2</option>
+       
+                            </select>
+                            </li>
+                             <li class="">
+                                <input type="text" class="form-control input-lg df" placeholder="Search for a service" />
+                            </li>
+                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.intro-header -->
+
+    <!-- Page Content -->
+
+	<a  name="services"></a>
+  
+    <!-- /.content-section-a -->
+
+
+    <!-- /.content-section-b -->
+
+
+
+	
+
+    <!-- Footer -->
+    <footer>
+        <div class="container cx">
+            <div class="row">
+                <div class="col-md-2 col-xs-6  text-center">
+                   
+                        <img src="img/x_1.jpg">
+                        <br>
+                            <a href="application-repair.html" >Application Repair </a>
+                              </div>
+                        <div class="col-md-2 col-xs-6 text-center">
+                        <img src="img/x_2.jpg">
+                        <br>
+                            <a href="beauty-spa.html">Beauty & spa</a>
+                            </div>
+                        <div class="col-md-2 col-xs-6 text-center">
+                        <img src="img/x_3.jpg">
+                          <br>
+                            <a href="home-cleaning.html">Home Cleaning & Reapaires</a>
+                            </div>
+                       <div class="col-md-2 col-xs-6 text-center">
+                       <img src="img/x_4.jpg">
+                         <br>
+                            <a href="business-taxes.html">Business & Taxes</a>
+                  </div>
+                     <div class="col-md-2 col-xs-6 text-center">
+                       <img src="img/x_5.jpg">
+                         <br>
+                            <a href="beauty-spa.html">Personal & More</a>
+                  </div>
+              
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+
+</html>
