@@ -45,11 +45,13 @@ h6 {
     padding-bottom: 7%;
 }
 
-.intro-message > h1 {
-    margin: 0;
-    text-shadow: 2px 2px 3px rgba(210, 186, 186, 0.6);
-    font-size: 5em;
+
+.intro-message {
+    position: relative;
+    padding-top: 30%;
+    padding-bottom: 15%;
 }
+
 
 .intro-divider {
     width: 400px;
